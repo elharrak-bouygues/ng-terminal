@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed, fakeAsync, tick } from '@angular/core/testing';
+import { ComponentFixture, TestBed, fakeAsync, tick, waitForAsync } from '@angular/core/testing';
 
 import { NgTerminalComponent } from './ng-terminal.component';
 import { GlobalStyleComponent } from './global-style/global-style.component';
@@ -30,7 +30,7 @@ describe('NgTerminalComponent with MaterialTab', () => {
   let mattabComponent: AppMatTabComponent;
   let mattabFixture: ComponentFixture<AppMatTabComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ NgTerminalComponent, AppMatTabComponent, GlobalStyleComponent ],
       imports: [ ResizableModule, MatTabsModule, BrowserAnimationsModule ]

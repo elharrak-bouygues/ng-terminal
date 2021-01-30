@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/qwefgh90/ng-terminal.svg?branch=master)](https://travis-ci.org/qwefgh90/ng-terminal) [![version](https://badge.fury.io/js/ng-terminal.svg)](https://www.npmjs.com/package/ng-terminal) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)]()
 
-NgTerminal is a web terminal that leverages xterm.js on Angular 8+. You can easily add it into your application by adding `<ng-terminal></ng-terminal>` into your component.
+NgTerminal is a web terminal that leverages xterm.js on Angular 11+. You can easily add it into your application by adding `<ng-terminal></ng-terminal>` into your component.
 
 NgTerminal provides some features including [xtermjs](https://xtermjs.org/). You can adjust dimensions of a terminal by dragging and to fix the number of rows and cols. New usuful features should be added continuously.
 
@@ -83,7 +83,7 @@ There are two ways to control the terminal. Calling API which is a interface of 
 ```typescript 
   import { NgTerminal } from 'ng-terminal';
   ...
-  @ViewChild('term', { static: true }) child: NgTerminal; // for Angular 8
+  @ViewChild('term') child: NgTerminal; 
 ```
 
 #### NgTerminalComponent (input/output properties)
